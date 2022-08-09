@@ -1,0 +1,97 @@
+.product-range {
+    background-color: transparent !important;
+}
+
+.product-range .item-products {
+    width: 100%;
+    /* overflow: hidden; */
+    background-color: #323232;
+    border-radius: 32px !important;
+    padding: 10px;
+}
+.product-range .item-products img {
+    width: 100%;
+}
+
+.product-range .item-products .col-product {
+    background-color: #333;
+    position: relative;
+}
+
+.product-range .item-products > h4,
+.product-range .item-products > h4,
+.product-range .item-products > p,
+.product-range .item-products a {
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-range .item-products > h4 {
+    height: 45px;
+    margin-top: 20px;
+}
+
+.product-range .item-products .add-to-cart {
+    width: 80%;
+    padding: 6px;
+    border: 1px solid #76706f;
+    margin: 15px auto 15px;
+    border-radius: 5px;
+}
+
+.product-range .item-products .component {
+    padding: 3px;
+    border: none;
+}
+
+.product-range .item-products .product-sale-rate {
+    position: absolute !important;
+    top: 20px !important;
+    right: 25px !important;
+    background-color: rgb(35, 33, 33);
+    /*line-height: auto !important;*/
+    /*width: auto !important;*/
+    text-align: center;
+    border-radius: 30px !important;
+    color: rgb(216, 216, 32);
+    /*padding: 5px !important;*/
+
+    width: 60px !important;
+    height: 60px !important;
+
+}
+
+.product-range .item-products .product-sale-rate {
+    line-height: 50px;
+}
+
+.product-range .item-products .add-to-cart:hover {
+    color: rgb(216, 216, 32);
+}
+
+.title-choice {
+    text-align: left;
+    color: white !important;
+}
+
+
+/* thiết lập style cho thẻ a */
+.pagination a {
+    color: white !important;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+/* thiết lập style cho class active */
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+/* thêm màu nền khi người dùng hover vào class không active */
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}

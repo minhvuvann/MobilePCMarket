@@ -1,0 +1,606 @@
+.my-grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.my-grid.my-wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.my-row.my-no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.my-col {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.my-row.my-no-gutters .my-col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Column: .my-col
+Prefix class:
+    - c - mobile
+    - m - tablet
+    - l - pc */
+
+/* ẩn đi một cột ở chế độ mobile */
+.my-c-0 {
+    display: none;
+}
+
+/* Chiếm 1 cột cơ sở */
+/* Tương tự cho đến c-12 */
+.my-c-1 {
+    /* Nếu thằng chứa nó có flex-direction: row ==> Kích thước chiều ngang là 8.33333% */
+    /* Nếu thằng chứa nó có flex-direction: column ==> Kích thước chiều dọc là 8.33333% */
+    flex: 0 0 8.33333%;
+    /* Giới hạn kích thước chiều ngang tối đa */
+    max-width: 8.33333%;
+}
+
+.my-c-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.my-c-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.my-c-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.my-c-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+
+.my-c-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.my-c-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+
+.my-c-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.my-c-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.my-c-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+
+.my-c-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+}
+
+.my-c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.my-c-o-1 {
+    margin-left: 8.33333%;
+}
+
+.my-c-o-2 {
+    margin-left: 16.66667%;
+}
+
+.my-c-o-3 {
+    margin-left: 25%;
+}
+
+.my-c-o-4 {
+    margin-left: 33.33333%;
+}
+
+.my-c-o-5 {
+    margin-left: 41.66667%;
+}
+
+.my-c-o-6 {
+    margin-left: 50%;
+}
+
+.my-c-o-7 {
+    margin-left: 58.33333%;
+}
+
+.my-c-o-8 {
+    margin-left: 66.66667%;
+}
+
+.my-c-o-9 {
+    margin-left: 75%;
+}
+
+.my-c-o-10 {
+    margin-left: 83.33333%;
+}
+
+.my-c-o-11 {
+    margin-left: 91.66667%;
+}
+
+/* >= Tablet */
+@media (min-width: 740px) {
+    .my-row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    /* Vì trên tablet, gutter lớn hơn nên padding cũng lớn hơn */
+    .my-col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /* ẩn đi moo=ọt cột trên tablet */
+    .my-m-0 {
+        display: none;
+    }
+
+    /* sử dụng cho những thẻ không phải là thẻ div có thuộc tính của display block */
+    .my-m-1,
+    .my-m-2,
+    .my-m-3,
+    .my-m-4,
+    .my-m-5,
+    .my-m-6,
+    .my-m-7,
+    .my-m-8,
+    .my-m-9,
+    .my-m-10,
+    .my-m-11,
+    .my-m-12 {
+        display: block;
+    }
+
+    .my-m-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .my-m-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .my-m-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .my-m-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .my-m-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .my-m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .my-m-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .my-m-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .my-m-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .my-m-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .my-m-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .my-m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .my-m-o-1 {
+        margin-left: 8.33333%;
+    }
+
+    .my-m-o-2 {
+        margin-left: 16.66667%;
+    }
+
+    .my-m-o-3 {
+        margin-left: 25%;
+    }
+
+    .my-m-o-4 {
+        margin-left: 33.33333%;
+    }
+
+    .my-m-o-5 {
+        margin-left: 41.66667%;
+    }
+
+    .my-m-o-6 {
+        margin-left: 50%;
+    }
+
+    .my-m-o-7 {
+        margin-left: 58.33333%;
+    }
+
+    .my-m-o-8 {
+        margin-left: 66.66667%;
+    }
+
+    .my-m-o-9 {
+        margin-left: 75%;
+    }
+
+    .my-m-o-10 {
+        margin-left: 83.33333%;
+    }
+
+    .my-m-o-11 {
+        margin-left: 91.66667%;
+    }
+}
+
+/* PC medium resolution > */
+@media (min-width: 1113px) {
+    .my-row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .my-row.sm-gutter {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .my-col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .my-row.sm-gutter .my-col {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .my-l-0 {
+        display: none;
+    }
+
+    .my-l-1,
+    .my-l-2,
+    .my-l-2-4,
+    .my-l-3,
+    .my-l-4,
+    .my-l-5,
+    .my-l-6,
+    .my-l-7,
+    .my-l-8,
+    .my-l-9,
+    .my-l-10,
+    .my-l-11,
+    .my-l-12 {
+        display: block;
+    }
+
+    .my-l-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .my-l-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .my-l-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .my-l-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .my-l-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .my-l-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .my-l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .my-l-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .my-l-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .my-l-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .my-l-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .my-l-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .my-l-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .my-l-o-1 {
+        margin-left: 8.33333%;
+    }
+
+    .my-l-o-2 {
+        margin-left: 16.66667%;
+    }
+
+    .my-l-o-3 {
+        margin-left: 25%;
+    }
+
+    .my-l-o-4 {
+        margin-left: 33.33333%;
+    }
+
+    .my-l-o-5 {
+        margin-left: 41.66667%;
+    }
+
+    .my-l-o-6 {
+        margin-left: 50%;
+    }
+
+    .my-l-o-7 {
+        margin-left: 58.33333%;
+    }
+
+    .my-l-o-8 {
+        margin-left: 66.66667%;
+    }
+
+    .my-l-o-9 {
+        margin-left: 75%;
+    }
+
+    .my-l-o-10 {
+        margin-left: 83.33333%;
+    }
+
+    .my-l-o-11 {
+        margin-left: 91.66667%;
+    }
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .my-wide {
+        width: 644px;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .my-wide {
+        width: 984px;
+    }
+
+    .my-wide .my-row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .my-wide .my-row.sm-gutter {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .my-wide .my-col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .my-wide .my-row.sm-gutter .my-col {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .my-wide .my-l-0 {
+        display: none;
+    }
+
+    .my-wide .my-l-1,
+    .my-wide .my-l-2,
+    .my-wide .my-l-2-4,
+    .my-wide .my-l-3,
+    .my-wide .my-l-4,
+    .my-wide .my-l-5,
+    .my-wide .my-l-6,
+    .my-wide .my-l-7,
+    .my-wide .my-l-8,
+    .my-wide .my-l-9,
+    .my-wide .my-l-10,
+    .my-wide .my-l-11,
+    .my-wide .my-l-12 {
+        display: block;
+    }
+
+    .my-wide .my-l-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .my-wide .my-l-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .my-wide .my-l-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .my-wide .my-l-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .my-wide .my-l-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .my-wide .my-l-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .my-wide .my-l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .my-wide .my-l-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .my-wide .my-l-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .my-wide .my-l-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .my-wide .my-l-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .my-wide .my-l-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .my-wide .my-l-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .my-wide .my-l-o-1 {
+        margin-left: 8.33333%;
+    }
+
+    .my-wide .my-l-o-2 {
+        margin-left: 16.66667%;
+    }
+
+    .my-wide .my-l-o-3 {
+        margin-left: 25%;
+    }
+
+    .my-wide .my-l-o-4 {
+        margin-left: 33.33333%;
+    }
+
+    .my-wide .my-l-o-5 {
+        margin-left: 41.66667%;
+    }
+
+    .my-wide .my-l-o-6 {
+        margin-left: 50%;
+    }
+
+    .my-wide .my-l-o-7 {
+        margin-left: 58.33333%;
+    }
+
+    .my-wide .my-l-o-8 {
+        margin-left: 66.66667%;
+    }
+
+    .my-wide .my-l-o-9 {
+        margin-left: 75%;
+    }
+
+    .my-wide .my-l-o-10 {
+        margin-left: 83.33333%;
+    }
+
+    .my-wide .my-l-o-11 {
+        margin-left: 91.66667%;
+    }
+}
