@@ -10,7 +10,7 @@ Dự án Web Bán Điện Thoại là một ứng dụng web được xây dựn
 
 - Java Development Kit (JDK) 8 trở lên
 - Apache Tomcat 9
-- MySQL Server
+- SQL Server
 
 ## Cài đặt
 
